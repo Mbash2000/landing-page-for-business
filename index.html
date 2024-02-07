@@ -106,13 +106,37 @@
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" rows="3" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Submit</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+  <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+      <h4 class="modal-title">Dear Costumer</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+      Thank you for contancting us
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
 <footer class="py-4 bg-dark text-light">
   <div class="container text-center">
     <p>&copy; 2024 My Business</p>
