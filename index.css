@@ -1,0 +1,100 @@
+.carousel-caption-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(20px);
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 15px;
+    color: #fff; 
+  }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .images .img-container {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px; 
+    overflow: hidden;
+  }
+  .images .img-container img {
+    border: 1px solid black ;
+    border-radius: 20px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .images .img-container:hover img {
+    transform: scale(1.05); 
+  }
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+}
+.contact_sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: .5;
+}
+.contact_content1 {
+    margin-bottom: 1rem;
+}
+.contact_content1 h3 {
+    width: fit-content;
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+}
+.contact_content1 h3 span {
+    color: #00ff90;
+}
+.contact_content2Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact_content2Icon h2 {
+    margin-left: .5rem;
+}
+.contact_content2 {
+    margin: .5rem 0;
+}
+.contact_content1 h3 span{
+    color:  #1e5f43;;
+}
+.footer_icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+.footer_icons ul li {
+    margin: 0 1.5rem 0 0;
+}
+.footer_icons ul li a {
+    font-size: 1rem;
+    transition: .3s;
+    color: #fff;
+}
+.footer_icons ul li:nth-child(1) a:hover {
+    color: rgb(83, 181, 226);
+}
+
+.footer_icons ul li:nth-child(2) a:hover {
+    color: rgb(95, 189, 95)
+}
+.footer_icons ul li:nth-child(3) a:hover {
+    color: rgb(53, 53, 59);
+}
+.footer_icons ul li:nth-child(4) a:hover {
+    color: rgb(0, 0, 255);
+}

@@ -4,48 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Landing Page</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-  rel="stylesheet" 
-  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-  crossorigin="anonymous">
-  <style>
-    /* Custom CSS styles */
-    .carousel-caption-top-left {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translateY(20px);
-      background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
-      padding: 10px 15px;
-      color: #fff; /* Caption text color */
-    }
-    /* Custom CSS styles */
-    .equal-width-images {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    .equal-width-images .img-container {
-      flex-basis: calc(33.33% - 10px); /* Adjust this value for different numbers of images per row */
-      margin-bottom: 20px; /* Adjust the space between rows */
-      overflow: hidden;
-    }
-    .equal-width-images .img-container img {
-      width: 50%;
-      height: 50%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-    .equal-width-images .img-container:hover img {
-      transform: scale(1.05); /* Add hover effect */
-    }
-  </style>
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+  rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
+  <!-- Bootstrap core CSS -->
+  <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
 </head>
-<body>
-
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class="">
+  <header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">My Business</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,7 +38,7 @@
     </div>
   </nav>
 </header>
-<section>
+<section class="mt-5">
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -95,7 +63,6 @@
           <a href="#" class="text-decoration-none text-light">Learn more-></a></p>
       </div>
     </div>
-    <!-- Add more carousel items as needed -->
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -107,46 +74,54 @@
   </button>
 </div>
 </section>
-<section>
-  <h2 class="text-center">Our Company</h2>
+<section class="m-5">
+  <h2 class="text-center mb-3">Our Businesses</h2>
   <div class="container text-center">
-    <div class="equal-width-images">
+    <div class="images">
       <div class="img-container">
-        <img src="Img/images.png" alt="Image 1">
+        <img src="Img/parts.png" alt="Image 1">
         <div>
-          <h4 class="text-center">Good Relationship with customers</h4>
+          <h4 class="text-center">Car spare parts</h4>
         </div>
       </div>
       <div class="img-container">
-        <img src="Img/download (1).webp" alt="Image 2">
+        <img src="Img/parts.png" alt="Image 2">
         <div>
-          <h4 class="text-center">Custumer Services</h4>
+          <h4 class="text-center">machines spare parts</h4>
         </div>
       </div>
       <div class="img-container">
-        <img src="Img/images.png" alt="Image 3">
+        <img src="Img/parts.png" alt="Image 3">
         <div>
-          <h4 class="text-center">About Us</h4>
+          <h4 class="text-center">motor services</h4>
         </div>
       </div>
-      <!-- Add more img-container divs for additional images -->
+      <div class="img-container">
+        <img src="Img/parts.png" alt="Image 1">
+        <div>
+          <h4 class="text-center">Other services</h4>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="Img/parts.png" alt="Image 2">
+        <div>
+          <h4 class="text-center">machines services</h4>
+        </div>
+      </div>
+      <div class="img-container">
+        <img src="Img/parts.png" alt="Image 3">
+        <div>
+          <h4 class="text-center">motorcycle spare parts</h4>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-<!--section id="hero" class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Welcome to my Business</h1>
-    <p class="lead">A platform to showcase my services.</p>
-    <a href="#" class="btn btn-secondary btn-lg">Get Started</a>
-  </div>
-</section-->
-
-<section id="features" class="py-5">
+<!--section id="features" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">Features</h2>
     <div class="row" data-bs-theme="light">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Feature 1</h5>
@@ -154,7 +129,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Feature 2</h5>
@@ -162,7 +137,15 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Feature 3</h5>
+            <p class="card-text">Description of feature 3.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Feature 3</h5>
@@ -172,38 +155,57 @@
       </div>
     </div>
   </div>
-</section>
-
+</section-->
 <section id="about" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center mb-4">About Us</h2>
-    <p class="lead text-center">Brief description of my business.</p>
+    <p class="lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Error veritatis at quasi id cumque amet eveniet debitis fuga?
+       Error porro sed alias reprehenderit libero eaque culpa est tenetur laboriosam necessitatibus?.</p>
   </div>
 </section>
-
-<section id="contact" class="py-5 bg-dark text-light">
-  <div class="container">
-    <h2 class="text-center mb-4">GET IN TOUCH</h2>
+<section  id="contact" class="bg-dark text-light">
+  <h2 class="text-center">Contact us</h2>
+  <div class="contact">
+    <div class="contact_sec">
+    <div class="contact_content1">
+      <h3>barkumgeneralenterprises<span>2012</span>@gmail.com</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis
+        optio earum doloremque quod fugit fugiat sint molestiae est
+        dignissimos dolor animi quasi, corporis sequi ipsum! Lorem ipsum,
+        dolor sit amet consectetur adipisicing elit. Tenetur debitis
+        provident officia! A, praesentium. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Ratione perspiciatis suscipit quas
+        ex perferendis minima. Earum eos iusto deserunt expedita.
+      </p>
+    </div>
+    <div class="contact_content2" >
+      <div class="contact_content2Icon">
+        <i class="fas fa-phone-alt"></i>
+        <h2>+234-9161-609-808</h2>
+      </div>
+      <div class="contact_content2Icon">
+        <i class="fas fa-envelope"></i>
+        <h2>+234-9114-982-923</h2>
+      </div>
+    </div>
+    </div>
     <div class="row">
+      <h3 class="text-center mb-4">Send Message</h3>
       <div class="col-md-6 mx-auto">
-        <form data-bs-theme="dark" action="/action_page.php" class="was-validated">
+        <form data-bs-theme="dark" action="/action_page.php">
           <div class="mb-3">
             <label for="name" class="form-label">Your Name</label>
             <input type="text" class="form-control" id="name" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Your Email</label>
             <input type="email" class="form-control" id="email" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
           </div>
           <div class="mb-3">
             <label for="message" class="form-label">Message</label>
             <textarea class="form-control" id="message" rows="3" required></textarea>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
           </div>
           <button type="submit" class="btn btn-secondary">
             Submit</button>
@@ -211,18 +213,30 @@
       </div>
     </div>
   </div>
+  <footer class="py-4 bg-dark text-light">
+    <div class="footer_icons">
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-envelope"></i></a>
+        </li>
+         <li><a href="#"><i class="fab fa-facebook"></i></a>
+         </li>
+      </ul>
+    </div>
+    <div class="container text-center">
+      <p>&copy; 2024 My Business</p>
+    </div>
+  </footer>
 </section>
-<footer class="py-4 bg-dark text-light">
-  <div class="container text-center">
-    <p>&copy; 2024 My Business</p>
-  </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" 
-crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
-crossorigin="anonymous"></script>
-
+<!-- scripts -->
+<!-- Bootstrap -->
+<script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="assets/Bootstrap/js/bootstrap.min.js"></script> 
 </body>
 </html>
